@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.heading-1, .heading-2, .heading-3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 1; }
+
+.heading-2 {
+  font-size: 3.25rem;
+  line-height: 1; }
+
+.heading-3 {
+  font-size: 2rem;
+  line-height: 1; }
+
+.row {
+  max-width: 120rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem)/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2*6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2*6rem) / 3) + 6rem); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3*6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3*6rem) / 4 ) + 2*6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3*6rem) / 4); }
+
+.btn {
+  margin: 3rem 3rem 2rem 3rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  text-transform: uppercase; }
+
+.btn--green {
+  color: white;
+  background: #FF1654; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  min-height: 100vh; }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.top {
+  background-color: white;
+  border-bottom: 3px solid #f4f4f4; }
+
+.header {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__logo {
+    width: 25rem;
+    height: auto;
+    padding: 0 1.5rem;
+    color: white; }
+  .header__nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__nav-item {
+      padding: 0 2rem;
+      color: #333333; }
+
+.first {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/cabin-large-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left; }
+
+.main {
+  color: white;
+  min-height: 60vh;
+  display: flex; }
+  .main__heading {
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 2rem; }
+  .main__heading--primary {
+    font-size: 4rem;
+    line-height: 1.5;
+    margin: 3rem; }
+    .main__heading--primary span {
+      color: #B6E002; }
+  .main__p {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 3rem; }
+
+.offerings {
+  background-image: linear-gradient(to right, #D38312, #a83279); }
+  .offerings__boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .offerings__box {
+    color: white;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center; }
+  .offerings__icon-box {
+    margin-right: 2rem; }
+  .offerings__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: white; }
+  .offerings__box-heading {
+    font-size: 1.6rem; }
+  .offerings__box-p {
+    font-size: 1.4rem; }
+
+.second {
+  border-bottom: 3px solid #f4f4f4; }
+
+.support {
+  margin: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .support__heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 2rem;
+    color: #C5168D;
+    text-align: center; }
+  .support__logo {
+    max-width: 15rem;
+    filter: brightness(0) contrast(0); }

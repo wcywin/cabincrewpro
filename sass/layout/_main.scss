@@ -1,0 +1,77 @@
+.first {
+  background-image: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.3)), url("../../img/cabin-large-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.main {
+  color: white;
+  min-height: 60vh;
+  display: flex;
+
+  &__heading {;
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__heading--primary {
+    font-size: 4rem;
+    line-height: 1.5;
+    margin: 3rem;
+
+    span {
+      color: $color-green-olive;
+    }
+  }
+
+  &__p{
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 3rem;
+  }
+
+}
+
+.offerings {
+  background-image: linear-gradient(to right, #D38312, #a83279);
+
+
+  &__boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__box {
+    color: white;
+    margin: 1.5rem;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-box {
+    margin-right: 2rem;
+  }
+
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: white;
+  }
+
+  &__box-content {
+
+  }
+
+  &__box-heading {
+    font-size: 1.6rem;
+  }
+
+  &__box-p {
+    font-size: 1.4rem;
+  }
+
+}
