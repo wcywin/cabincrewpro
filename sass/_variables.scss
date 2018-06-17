@@ -1,9 +1,23 @@
 // COLORS
 $color-primary-dark-grey: #333333;
+$color-primary-grey: #645A53;
+$color-primary-red: #cc0000;
+$color-primary-dark-yellow: #B0763B;
+
 
 $color-grey-light-1: #f4f4f4;
 $color-grey-light-2: #e3e3e3;
 $color-grey-light-3: #aaaaaa;
+$color-grey-dark-1: #999999;
+$color-grey-dark-2: #666666;
+$color-grey-dark-3: #666666;
+
+// PALLETTE
+$color-green-websafe-olive: #cccc33;
+$color-blue-websafe-dark: #000033;
+$color-blue-websafe-light: #4E7AC7;
+
+
 
 $color-violet-light: #BDADD7;
 $color-pink-light: #FF9BF2;
@@ -12,8 +26,6 @@ $color-violet-dark: #59237A;
 $color-green-olive: #B6E002;
 $color-green-olive-dark: #99C432;
 $color-grey-background: #333333;
-
-$color-red-sharp: #CC0033;
 
 
 // BREAKPOINTS
@@ -30,6 +42,7 @@ $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
 // FONT
+$default-font-family: "Roboto", sans-serif;
 $default-font-size: 1.6rem;
 
 // LINE

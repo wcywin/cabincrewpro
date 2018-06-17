@@ -1,8 +1,8 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $default-font-family;
   font-weight: 400;
   line-height: 1.6;
-  background-color: $color-grey-light-1;
+  color: $color-primary-dark-grey;
 
   min-height: 100vh;
 }

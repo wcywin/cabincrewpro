@@ -1,5 +1,6 @@
 img/
 node_modules/
+font/
 Github repository.png
 package-lock.json
 .idea/watcherTasks.xml

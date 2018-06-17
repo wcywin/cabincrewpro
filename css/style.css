@@ -10,22 +10,27 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 56.25%; } }
 
-.heading-1, .heading-2, .heading-3 {
-  font-family: "Open Sans", sans-serif;
+.heading-primary {
+  font-family: "Roboto", sans-serif;
   font-weight: 400; }
 
-.heading-1 {
-  font-size: 4.5rem;
-  line-height: 1; }
-
-.heading-2 {
-  font-size: 3.25rem;
-  line-height: 1; }
-
-.heading-3 {
-  font-size: 2rem;
-  line-height: 1; }
+.heading-primary {
+  padding-top: 2rem; }
+  .heading-primary__h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    padding: 2rem;
+    text-align: center;
+    color: rgba(100, 90, 83, 0.8); }
+  .heading-primary__hr {
+    width: 10rem;
+    margin: 0 auto;
+    color: #B6E002; }
 
 .row {
   max-width: 120rem;
@@ -74,18 +79,25 @@ html {
   font-weight: 700;
   border: none;
   border-radius: 0;
-  outline: none;
-  text-transform: uppercase; }
+  outline: none; }
+  @media only screen and (max-width: 56.25em) {
+    .btn {
+      width: 100%;
+      margin: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .btn {
+      width: 90%;
+      margin: 3rem; } }
 
-.btn--green {
+.btn--red {
   color: white;
-  background: #FF1654; }
+  background: #cc0000; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  color: #333333;
   min-height: 100vh; }
 
 .container {
@@ -98,6 +110,7 @@ body {
 
 .header {
   font-size: 1.6rem;
+  min-height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -106,6 +119,9 @@ body {
     height: auto;
     padding: 0 1.5rem;
     color: white; }
+    @media only screen and (max-width: 56.25em) {
+      .header__logo {
+        padding: 2rem; } }
   .header__nav {
     list-style: none;
     display: flex;
@@ -114,12 +130,17 @@ body {
     .header__nav-item {
       padding: 0 2rem;
       color: #333333; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      flex-direction: column;
+      padding-bottom: 2rem; } }
 
 .first {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../../img/cabin-large-1.jpg");
+  background-image: linear-gradient(to right, rgba(78, 122, 199, 0.9) 45%, rgba(99, 69, 161, 0.2)), url("../img/cabincrew.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top left; }
+  background-position: center center;
+  font-family: "Roboto", sans-serif; }
 
 .main {
   color: white;
@@ -127,56 +148,155 @@ body {
   display: flex; }
   .main__heading {
     color: white;
-    margin-top: 5rem;
+    margin-top: 10rem;
     margin-bottom: 2rem; }
-  .main__heading--primary {
-    font-size: 4rem;
+    .main__heading span {
+      color: #B6E002; }
+    @media only screen and (max-width: 68.75em) {
+      .main__heading {
+        margin: 8rem 1rem 2rem; } }
+  .main__heading-primary {
+    font-size: 4.5rem;
     line-height: 1.5;
     margin: 3rem; }
-    .main__heading--primary span {
-      color: #B6E002; }
+    .main__heading-primary-2 {
+      font-size: 3rem;
+      line-height: 1.5;
+      margin: 3rem; }
+      .main__heading-primary-2 span {
+        color: #B6E002; }
+    @media only screen and (max-width: 68.75em) {
+      .main__heading-primary {
+        font-size: 3.5rem; } }
   .main__p {
     font-size: 2rem;
     line-height: 1.5;
     margin: 3rem; }
+    @media only screen and (max-width: 68.75em) {
+      .main__p {
+        font-size: 1.6rem; } }
 
 .offerings {
-  background-image: linear-gradient(to right, #D38312, #a83279); }
+  background: #333333; }
   .offerings__boxes {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 68.75em) {
+      .offerings__boxes {
+        flex-direction: column; } }
   .offerings__box {
     color: white;
     margin: 1.5rem;
     display: flex;
     align-items: center; }
+    .offerings__box:not(:last-child) {
+      padding-right: 10rem;
+      border-right: 1px solid white; }
   .offerings__icon-box {
     margin-right: 2rem; }
   .offerings__icon {
     height: 3rem;
     width: 3rem;
-    fill: white; }
+    fill: #B6E002; }
   .offerings__box-heading {
     font-size: 1.6rem; }
   .offerings__box-p {
     font-size: 1.4rem; }
 
 .second {
-  border-bottom: 3px solid #f4f4f4; }
+  background-color: white; }
 
 .support {
-  margin: 6rem;
+  min-height: 16rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center; }
+  @media only screen and (max-width: 68.75em) {
+    .support {
+      height: auto;
+      flex-direction: column; } }
   .support__heading {
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.5;
     padding: 2rem;
-    color: #C5168D;
     text-align: center; }
   .support__logo {
     max-width: 15rem;
     filter: brightness(0) contrast(0); }
+    @media only screen and (max-width: 75em) {
+      .support__logo {
+        max-width: 13rem; } }
+    @media only screen and (max-width: 68.75em) {
+      .support__logo {
+        max-width: 15rem;
+        margin: 2rem auto; } }
+
+.third {
+  background-color: #f4f4f4;
+  padding: 3rem 0; }
+
+.program {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .program__content {
+    width: 60%;
+    background-color: white;
+    padding: 2rem 6rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px; }
+  .program__content-list {
+    list-style: none;
+    padding: 2rem; }
+  .program__content-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .program__content-icon {
+    margin: 0;
+    padding: 0;
+    height: 2rem;
+    width: 2rem;
+    fill: #B6E002; }
+  .program__content-list-item {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #645A53;
+    border-bottom: 1px solid #999999; }
+  .program__content-p {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: #645A53; }
+    .program__content-p i {
+      text-decoration: line-through; }
+    .program__content-p span {
+      font-size: 2rem;
+      color: #cc0000; }
+  .program__content-p-cena {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #645A53; }
+    .program__content-p-cena span {
+      text-decoration: line-through;
+      color: #cc0000; }
+
+.intersection {
+  background: #333333; }
+
+.banner__heading {
+  margin: 0 auto;
+  padding: 4rem 0;
+  text-align: center; }
+
+.banner__heading-h1 {
+  font-size: 3.5rem;
+  color: white; }
+
+.banner__heading-h2 {
+  font-size: 3.5rem;
+  color: white; }
+  .banner__heading-h2 span {
+    color: #B6E002; }

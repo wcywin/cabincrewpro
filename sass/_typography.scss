@@ -1,26 +1,27 @@
 %heading {
-  font-family: "Open Sans", sans-serif;
+  font-family: $default-font-family;
   font-weight: 400;
 }
 
-.heading-1 {
+.heading-primary {
   @extend %heading;
-  font-size: 4.5rem;
-  //color: $color-violet-dark;
-  line-height: 1;
+  padding-top: 2rem;
+
+  &__h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    padding: 2rem;
+    text-align: center;
+    color: rgba($color-primary-grey,.8);
+  }
+
+  &__hr {
+    width: 10rem;
+    margin: 0 auto;
+    color: $color-green-olive;
+  }
+
 }
 
-.heading-2 {
-  @extend %heading;
-  font-size: 3.25rem;
-  //color: $color-violet-dark;
-  line-height: 1;
-}
-
-.heading-3 {
-  @extend %heading;
-  font-size: 2rem;
-  //color: $color-violet-dark;
-  line-height: 1;
-}
 
