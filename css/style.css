@@ -284,7 +284,10 @@ body {
       color: #cc0000; }
 
 .intersection {
-  background: #333333; }
+  background-image: linear-gradient(to right, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)), url("../img/world-map-grey.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .banner__heading {
   margin: 0 auto;

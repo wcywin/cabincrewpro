@@ -1,6 +1,10 @@
 .intersection {
   //background: repeating-linear-gradient(-55deg, #222, #222 3px, #333 3px, #333 6px);
-  background: $color-primary-dark-grey;
+  background-image: linear-gradient(to right, rgba($color-primary-dark-grey, .9), rgba($color-primary-dark-grey, .9)), url('../img/world-map-grey.png');
+  //background-color: rgba($color-primary-dark-grey, 1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .banner {
