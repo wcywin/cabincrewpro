@@ -6,15 +6,16 @@
   border: none;
   border-radius: 0;
   outline: none;
-
-  @media only screen and (max-width: 56.25em) {
-    width: 100%;
-    margin: 3rem;
-  }
+  box-shadow: 0 5px 5px rgba(0,0,0,.3);
 
   @media only screen and (max-width: 56.25em) {
     width: 90%;
     margin: 3rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+    margin: 3rem auto;
   }
 
 }

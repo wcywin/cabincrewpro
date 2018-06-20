@@ -5,6 +5,7 @@
 
 .program {
   margin-top: 3rem;
+  text-align: center;
 
   display: flex;
   justify-content: center;
@@ -16,11 +17,26 @@
     padding: 2rem 6rem;
     border: 1px solid $color-grey-light-2;
     border-radius: 5px;
+    text-align: center;
+
+    @media only screen and (max-width: 68.75em) {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: 56.25em) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      width: 90%;
+      padding: 2rem;
+    }
   }
 
   &__content-list {
     list-style: none;
     padding: 2rem;
+    text-align: left;
   }
 
   &__content-box {
@@ -35,6 +51,11 @@
     height: 2rem;
     width: 2rem;
     fill: $color-green-olive;
+
+    @media only screen and (max-width: 37.5em) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
   }
 
   &__content-list-item {
@@ -42,6 +63,10 @@
     margin: 1rem 0;
     color: $color-primary-grey;
     border-bottom: 1px solid $color-grey-dark-1;
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 2rem;
+    }
   }
 
   &__content-p {
@@ -54,18 +79,7 @@
     }
 
     span {
-      font-size: 2rem;
-      color: $color-primary-red;
-    }
-  }
-
-  &__content-p-cena {
-    font-size: 2rem;
-    margin: 1rem 0;
-    color: $color-primary-grey;
-
-    span {
-      text-decoration: line-through;
+      font-size: 3.5rem;
       color: $color-primary-red;
     }
   }
